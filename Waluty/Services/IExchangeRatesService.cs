@@ -4,6 +4,6 @@ namespace Waluty.Services
 {
     public interface IExchangeRatesService
     {
-        Task<string> GetRates();
+        Task SaveRate();
     }
 }

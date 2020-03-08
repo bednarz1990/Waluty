@@ -13,6 +13,5 @@ namespace Waluty.Models
         [Column(TypeName = "decimal(18, 4)")]
 
         public decimal MidPrice { get; set; }
-
      }
 }
