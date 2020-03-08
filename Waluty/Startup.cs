@@ -89,7 +89,7 @@ namespace Waluty
 
             app.UseHangfireDashboard();
 
-            RecurringJob.AddOrUpdate<IExchangeRatesService>( rate => rate.SaveRate(), Cron.Minutely);
+            RecurringJob.AddOrUpdate<IExchangeRatesService>( rate => rate.SaveRate(), Cron.Daily);
 
             app.UseEndpoints(endpoints =>
             {
